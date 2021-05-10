@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Playfair Display Italic';
+	src: url('../fonts/PlayfairDisplay-Italic.ttf');
+}
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.title-h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-size: 72px;
+}
+
+.title-p {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: 'Playfair Display Italic', serif;
+	font-size: 20px;
+}
+
+.image-box {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	max-width: 800px;
+}
+
+.images {
+	width: 800px;
+}
+
+.button-wrapper {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 800px;
+}
+
+.btn {
+	width: 400px;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-size: 41px;
+	background-color: white;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-color: #C3CCD9;
+	transition-duration: 0.4s;
+}
+
+.btn, 
+.btn:active, 
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+	background-color: #C3CCD9;
+}
+
+.btn-left {
+	border-left: 0px;
+}
+
+.btn-right {
+	border-style: none;
+}

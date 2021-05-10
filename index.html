@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Слайдер</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<h1 class="title-h1">О боже!</h1>
+	<p class="title-p">это же мой первый слайдер...</p>
+	<div class="image-box"><img id="image" class="images" src="assets/img1.jpg" alt="random-image"></div>
+	<div class="button-wrapper">	
+		<button class="btn btn-left" id="left">туда</button><button class="btn btn-right" id="right">сюда</button>
+	</div>
+	<script>
+		const arr = ["assets/img1.jpg", "assets/img2.jpg", "assets/img3.jpg", "assets/img4.jpg"];
+		let flag = 0;
+		const img = document.getElementById('image');
+		const right = document.getElementById('right');
+		const left = document.getElementById('left');
+		function scrollRight () {
+			flag = (flag + 1)%arr.length;
+			img.src = arr[flag];
+		}
+		function scrollLeft () {
+			flag = (flag - 1);
+			if (flag == -1) {
+				flag = arr.length - 1;
+			}
+			img.src = arr[flag];
+		}
+		right.addEventListener('click', scrollRight);
+		left.addEventListener('click', scrollLeft);
+	</script>
+</body>
+</html>
